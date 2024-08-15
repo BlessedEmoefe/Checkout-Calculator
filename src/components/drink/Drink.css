@@ -1,0 +1,40 @@
+.buttonContainer {
+  width: 250px;
+  min-width: max-content;
+  /* box-shadow: 0px 0px 37px 5px rgba(0, 0, 0, 0.1); */
+  padding: 0.8rem 1rem;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid rgb(28, 28, 28);
+  cursor: pointer;
+  position: relative;
+  @media only screen and (max-width: 650px) {
+    width: 100%;
+  }
+}
+
+.buttonName,
+.buttonPrice {
+  font-size: 1.2rem;
+  color: rgb(28, 28, 28);
+  line-height: 1.3rem;
+  font-weight: normal;
+  margin: 0;
+  text-transform: capitalize;
+}
+.count {
+  font-size: 1rem;
+  background-color: red;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  line-height: 1.1rem;
+  font-weight: normal;
+  padding: 0.3rem 0.5rem;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
