@@ -1,5 +1,5 @@
 {
-  "name": "myapp",
+  "name": "checkout-calculator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

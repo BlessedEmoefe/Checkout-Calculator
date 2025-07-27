@@ -22,20 +22,27 @@ const App = () => {
   ];
 
   return (
-    <div className="appContainer">
-      <div className="drinkButtonContainer">
-        {drinks.map((drink) => (
-          <Drink
-            key={drink.name}
-            name={drink.name}
-            price={drink.price}
-            onOrder={handleOrder}
-          />
-        ))}
-      </div>
+    <>
+      <div className="shopping-elements"></div>
+      <div className="appContainer">
+        <h1>Checkout Calculator</h1>
+     
+      <div className="contentContainer">
+        <div className="drinkButtonContainer">
+          {drinks.map((drink) => (
+            <Drink
+              key={drink.name}
+              name={drink.name}
+              price={drink.price}
+              onOrder={handleOrder}
+            />
+          ))}
+        </div>
 
-      <Total totalDrinks={totalDrinks} totalPrice={totalPrice} />
-    </div>
+        <Total totalDrinks={totalDrinks} totalPrice={totalPrice} />
+      </div>
+      </div>
+    </>
   );
 };
 
